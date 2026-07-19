@@ -17,9 +17,13 @@ main li {
     line-height: 1.7em;
     font-style: italic;
 }
+
+/* Combinator Selectors */
 h1 h2 {
     font-variant: small-caps;
 }
+
+/* Attribute Selectors */
 *[href] {
     text-decoration: underline;
     font-style: italic;
