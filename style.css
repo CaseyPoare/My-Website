@@ -71,12 +71,8 @@ q {
     margin-right: 2em;
     margin-bottom: 8em;
 }
-#clearing_images_1 {
-    clear: both;
-}
-#clearing_images_2 {
-    clear: both;
-}
+
+
 /* Class Selectors */
 .title_header {
     font-variant: small-caps;
@@ -86,4 +82,13 @@ q {
     font-size: 28px;
     letter-spacing: 2px;
     text-align: left;
+}
+.floating_images {
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 8em;
+}
+.clearing_images {
+    clear: both;
+    text-align: center;
 }
