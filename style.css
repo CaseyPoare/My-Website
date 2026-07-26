@@ -2,25 +2,31 @@
 /* Universal Selector */
 body {
     color: #249d66;
-    background-color: rgb(12, 12, 12);
+    /* Background styles */
+    background-image: url('https://removal.ai/wp-content/uploads/2021/09/black-background-08-vecteezy.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Tahoma, sans-serif;
     font-size: 18px;
 }
+
 p {
     line-height: 1.5em;
 }
+
 html {
     text-align: center;
 }
+
 main li {
     text-align: left;
     line-height: 1.7em;
     font-style: italic;
 }
 
-/* Combinator Selectors */
-h1 h2 {
-    font-variant: small-caps;
+ul {
+    margin: 2em;
+    padding: 2em 2em 6em 2em;
 }
 
 /* Attribute Selectors */
@@ -35,12 +41,15 @@ h1 h2 {
 h1 {
     color: #097f7f;
     font-family: Georgia, sans-serif;
-    font-width: calc(100% - 20px)   ;
+    font-width: calc(100% - 20px);
+    border: #097f7f solid 4px;
+    border-radius: 80px;
 }
+
 h2 {
     color: #40358a;
     font-family: fantasy, sans-serif;
-    font-width: calc(150% - 22px)   ;
+    font-width: calc(150% - 22px);
 }
 
 /* Quote styles */
@@ -52,42 +61,61 @@ q {
 /* Header Styles */
 /* ID Selectors */
 #quote_header {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    color: #ea46b0;
+    font-family: "Times New Roman", sans-serif;
     font-size: 18px;
-    text-decoration: bold;
+    font-weight: 700;
+    text-shadow: 0 2px 8px #000000bf;
+    /* clearer on dark/over images */
 }
+
 #information_header {
     font-size: 24px;
     font-style: italic;
     font-weight: 100;
     letter-spacing: 1px;
 }
+
 #mason-water-access {
     float: left;
     margin-right: 2em;
     margin-bottom: 8em;
 }
+
 #kitsap_water_access {
     float: left;
     margin-right: 2em;
     margin-bottom: 8em;
 }
 
+#section_class {
+    padding: auto;
+    margin: auto;
+    width: fit-content;
+    text-align: left;
+}
 
 /* Class Selectors */
 .title_header {
     font-variant: small-caps;
     font-size: 40px;
 }
+
 .water_title {
     font-size: 28px;
     letter-spacing: 2px;
     text-align: left;
 }
+
 .floating_images {
     float: left;
     margin-right: 2em;
     margin-bottom: 8em;
 }
+
 .clearing_images {
     clear: both;
     text-align: center;
