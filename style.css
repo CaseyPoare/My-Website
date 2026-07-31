@@ -66,6 +66,33 @@ nav {
     font-weight: bolder;
 }
 
+a[href="#top"],
+.back-to-top {
+    display: block;
+    text-align: center;
+    padding: 2em;
+    clear: both;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+a[href="#top"]:hover,
+.back-to-top:hover {
+    transform: scale(1.08);
+    color: #097f7f;
+}
+
+a[href="https://discoverpass.wa.gov/"]:hover,
+a[href="https://wdfw.wa.gov/licenses/fishing"]:hover {
+    transform: scale(1.08);
+    color: #097f7f;
+}
+
+a[href="https://discoverpass.wa.gov/"],
+a[href="https://wdfw.wa.gov/licenses/fishing"] {
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
 /* Heading styles */
 /* Type Selectors */
 h1 {
@@ -127,6 +154,7 @@ q {
     text-align: left;
 }
 
+/* Safety Gear Styles*/
 #essential_safety_gear {
     float: left;
     width: 550px;
@@ -145,10 +173,88 @@ q {
     margin: 2em;
 }
 
+/* Regulations Styles */
+#general_rules {
+    float: left;
+    width: 550px;
+    border: #097f7f solid 4px;
+    border-radius: 80px;
+    padding: 2em;
+    margin: 2em;
+}
+
+#county_regulations {
+    float: right;
+    width: 550px;
+    border: #097f7f solid 4px;
+    border-radius: 80px;
+    padding: 2em;
+    margin: 2em;
+}
+
+/* Navigation Menu */
+#nav_menu ul {
+    list-style: none;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#nav_menu ul li {
+    float: left;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #097f7f;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid #fff;
+    transition: transform 0.2s ease;
+}
+
+#nav_menu ul li a.lastitem {
+    border-right: none;
+}
+
+#nav_menu ul li a.current {
+    color: yellow
+}
+
+#nav_menu ul li a:hover {
+    transform: scale(1.05);
+}
+
+#nav_menu ul li:first-child a {
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+
+#nav_menu ul li:last-child a {
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+    transform: scale(1.08);
+    color: #097f7f;
+}
+
 /* Class Selectors */
 .title_header {
     font-variant: small-caps;
     font-size: 40px;
+    text-align: center;
 }
 
 .water_title {
@@ -159,8 +265,9 @@ q {
 
 .floating_images {
     float: left;
+    max-width: 45%;
     margin-right: 2em;
-    margin-bottom: 8em;
+    margin-bottom: 2em;
 }
 
 .clearing_images {
@@ -196,3 +303,5 @@ q {
         width: 100%;
     }
 }
+
+@media only screen and (min-width: 652px) and (max-width: 768px) {
