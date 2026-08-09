@@ -117,6 +117,7 @@ q {
 
 /* Header Styles */
 /* ID Selectors */
+/*Main Homepage Styles*/
 #quote_header {
     display: block;
     text-align: center;
@@ -193,6 +194,25 @@ q {
     margin: 2em;
 }
 
+/* Wildlife Styles */
+#wildlife_information {
+    float: left;
+    width: 550px;
+    border: #097f7f solid 4px;
+    border-radius: 80px;
+    padding: 2em;
+    margin: 2em;
+}
+
+#wildlife_conservation {
+    float: right;
+    width: 550px;
+    border: #097f7f solid 4px;
+    border-radius: 80px;
+    padding: 2em;
+    margin: 2em;
+}
+
 /* Navigation Menu */
 #nav_menu ul {
     list-style: none;
@@ -203,16 +223,15 @@ q {
 #nav_menu ul li a {
     text-align: center;
     display: block;
-    padding: 1em 0;
+    padding: 1em 1.5em;
     text-decoration: none;
     background-color: #097f7f;
     color: white;
     font-weight: bold;
-    border-right: 2px solid #fff;
     transition: transform 0.2s ease;
 }
 
-#nav_menu ul li a.lastitem {
+#nav_menu ul li a.lastitem a {
     border-right: none;
 }
 
@@ -251,7 +270,7 @@ nav a:hover {
     font-size: 30px;
     margin-bottom: 10px;
     margin-top: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .water_title:nth-of-type(2) {
