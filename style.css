@@ -120,12 +120,13 @@ q {
 #quote_header {
     display: block;
     text-align: center;
-    margin: 0 auto;
+    margin: 0;
     color: #ea46b0;
     font-family: "Times New Roman", sans-serif;
     font-size: 18px;
     font-weight: 700;
     text-shadow: 0 2px 8px #000000bf;
+    margin-bottom: 6em;
 }
 
 #information_header {
@@ -195,19 +196,13 @@ q {
 /* Navigation Menu */
 #nav_menu ul {
     list-style: none;
-    display: table;
     margin: 0 auto;
     padding: 0;
-}
-
-#nav_menu ul li {
-    float: left;
 }
 
 #nav_menu ul li a {
     text-align: center;
     display: block;
-    width: 175px;
     padding: 1em 0;
     text-decoration: none;
     background-color: #097f7f;
@@ -229,15 +224,6 @@ q {
     transform: scale(1.05);
 }
 
-#nav_menu ul li:first-child a {
-    border-top-left-radius: 2em;
-    border-bottom-left-radius: 2em;
-}
-
-#nav_menu ul li:last-child a {
-    border-top-right-radius: 2em;
-    border-bottom-right-radius: 2em;
-}
 
 nav a {
     display: inline-block;
@@ -253,21 +239,84 @@ nav a:hover {
 /* Class Selectors */
 .title_header {
     font-variant: small-caps;
-    font-size: 40px;
+    font-size: clamp(24px, 4vw, 44px);
+    white-space: normal;
+    width: 100%;
+    margin: 3em auto;
     text-align: center;
 }
 
 .water_title {
-    font-size: 28px;
-    letter-spacing: 2px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0;
     text-align: left;
 }
 
+.water_title:nth-of-type(2) {
+    margin-top: 15px;
+}
+
+.water-text-column li {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: clamp(2px, 0.5vw, 6px);
+}
+
+.water-text-column {
+    flex: 1;
+    width: 55%;
+    max-width: 55%;
+    height: max-content;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.water-text-column ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.text-section-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical-content-creator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.vertical-content-creator .floating_images {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.split-content-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .floating_images {
-    float: left;
-    max-width: 45%;
-    margin-right: 2em;
-    margin-bottom: 2em;
+    min-width: 35%;
+    flex: 1;
+    width: 40%;
+    height: auto;
+    min-height: 320px;
+    border-radius: 4px;
 }
 
 .clearing_images {
@@ -291,6 +340,38 @@ nav a:hover {
     border-radius: 20px;
 }
 
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nav-item {
+    font-size: 14px;
+    width: auto !important;
+    flex: 1 1 0px;
+    margin: 0 4px;
+    text-align: center;
+    display: flex;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 10px 5px;
+    word-wrap: break-word;
+}
+
 /* Media Block */
 @media (max-width: 768px) {
     .card_container {
@@ -304,4 +385,183 @@ nav a:hover {
     }
 }
 
-@media only screen and (min-width: 652px) and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .split-content-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .floating_images {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+    }
+
+    .water-text-column {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .text-section-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 964px) {
+    p {
+        font-size: 14px;
+    }
+
+    #section_class {
+        font-size: 14px;
+    }
+
+    #quote_header {
+        font-size: 14px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .card li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .water_title {
+        font-size: 24px;
+    }
+
+    .water-text-column li {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    #section_class {
+        font-size: 12px;
+    }
+
+    #quote_header {
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .card li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .water_title {
+        font-size: 20px;
+    }
+
+    .water-text-column li {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    #section_class {
+        font-size: 10px;
+    }
+
+    #quote_header {
+        font-size: 10px;
+    }
+
+    a {
+        font-size: 10px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .card li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 626px) {
+    .water_title {
+        font-size: 18px;
+    }
+
+    .water-text-column li {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 8px;
+    }
+
+    #section_class {
+        font-size: 8px;
+    }
+
+    #quote_header {
+        font-size: 8px;
+    }
+
+    a {
+        font-size: 8px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .card li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .safety-gear-page .card_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .safety-gear-page .card {
+        width: 90%;
+        max-width: 500px;
+    }
+}

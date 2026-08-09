@@ -4,17 +4,6 @@
 <!--Opening header section-->
 
 <head>
-    <nav id="nav_menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="https://discoverpass.wa.gov/" target="_blank">Discovery Pass</a></li>
-            <li><a href="https://wdfw.wa.gov/licenses/fishing" target="_blank">Fishing Licenses</a></li>
-            <li><a href="safety_gear.html">Safety Gear</a></li>
-            <li><a href="regulations.html">Regulations</a></li>
-            <li><a href="#kitsap-water-access">Kitsap County</a></li>
-            <li><a href="#mason-county">Mason County</a></li>
-        </ul>
-    </nav>
     <!--Website name and description-->
 
     <meta charset="UTF-8">
@@ -26,11 +15,28 @@
 </head>
 
 <body>
+
+    <!--Navigation Menu-->
+
+    <nav id="nav_menu">
+        <ul class="nav-container">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="https://discoverpass.wa.gov/" target="_blank">Discovery Pass</a></li>
+            <li class="nav-item"><a href="https://wdfw.wa.gov/licenses/fishing" target="_blank">Fishing Licenses</a>
+            </li>
+            <li class="nav-item"><a href="safety_gear.html">Safety Gear</a></li>
+            <li class="nav-item"><a href="regulations.html">Regulations</a></li>
+            <li class="nav-item"><a href="#kitsap-water-access">Kitsap County</a></li>
+            <li class="nav-item"><a href="#mason-county">Mason County</a></li>
+        </ul>
+    </nav>
+
     <header>
         <!--Main heading for the page-->
         <h1 class="title_header">Water Accesses In Kitsap/Mason County</h1>
         <h2 id="information_header">Information provided by Casey Poare</h2>
     </header>
+
     <main>
 
         <!--Main body description-->
@@ -48,8 +54,7 @@
             swimmer,
             this guide will help you make the most of your time on the water, such as:
         <div>
-            <img class="floating_images" src="imgs/ride-the-tide.jpeg" alt="Ride The Tide 2024" width="600"
-                height="400">
+            <img class="floating_images" src="imgs/ride-the-tide.jpeg" alt="Ride The Tide 2024">
             <ul id="section_class">
                 <li>Information on local water accesses within Kitsap and Mason County</li>
                 <li>What you might need to get started out on the water</li>
@@ -84,10 +89,11 @@
                     Wildlife</a> website.
             </p>
             <div class="Image Row">
-                <img src="imgs/Discover-Pass.webp" alt="Discovery Pass" width="700" height="500">
+                <img class="floating_images" src="imgs/Discover-Pass.webp" alt="Discovery Pass">
 
             </div>
         </section>
+
         <section>
             <h1 class="title_header">Safety Gear</h1>
             <p>When paddle boarding, it's important to have the right <strong>safety gear</strong>. This includes a life
@@ -95,68 +101,95 @@
                 a
                 whistle, and a waterproof phone case. Depending on the conditions, you might also want to consider a
                 wetsuit or dry suit.</p>
-            <img src="imgs/Safety-equipment.jpg" alt="Paddle Boarding Safety Gear" width="700" height="400">
+            <img class="floating_images" src="imgs/Safety-equipment.jpg" alt="Paddle Boarding Safety Gear">
             <nav>
                 <a href="safety_gear.html" target="_blank">Safety Gear & Protection</a>
             </nav>
         </section>
+
         <section>
-            <h1 class="title_header">Rules and Regulations</h1>
-            <p>When accessing waterways, it's important to know the <strong>rules and regulations</strong> of the area
-            you're in.</p>
-            <img src="imgs/regulations.jpg" alt="Rules and Regulations" width="700" height="400">
-            <nav>
-            <a href="regulations.html" target="_blank">Rules and Regulations</a>
-            </nav>
+            <div class="vertical-content-creator">
+
+                    <h1 class="title_header">Rules and Regulations</h1>
+                    <p>When accessing waterways, it's important to know the <strong>rules and regulations</strong> of
+                        the area you're in.</p>
+
+                    <img class="floating_images" src="imgs/regulations.jpg" alt="Rules and Regulations">
+
+                    <nav>
+                        <a href="regulations.html" target="_blank">Rules and Regulations</a>
+                    </nav>
+                </div>
         </section>
-        <section>
 
-            <!-- Kitsap Water Accesses with their locations -->
-
-            <h1 id="kitsap-water-access" class="title_header">Kitsap Water Accesses</h1>
+        <!-- Kitsap Water Accesses with their locations -->
+        <section id="kitsap-water-access">
+            <h1 class="title_header">Kitsap Water Accesses</h1>
             <p>Kitsap County offers several great spots for paddle boarding and fishing/swimming. Some popular locations
-                include...
-            <ul>
-                <img class="floating_images" src="imgs/tacoma-narrows.jpg" alt="Kitsap Water Access" width="700"
-                    height="500">
-                <h2 class="water_title">Freshwater</h2>
-                <li><strong>Horseshoe Lake</strong></li>
-                <li><strong>Wildcat Lake County Park</strong></li>
-                <li><strong>Long Lake County Park</strong></li>
-                <li><strong>Island Lake County Park</strong></li>
-                <li><strong>Wick's Lake Park</strong></li>
-                <h2 class="water_title">Saltwater</h2>
-                <li><strong>Point No Point</strong></li>
-                <li><strong>Puget Sound</strong></li>
-                <li><strong>Manchester State Park</strong></li>
-                <li><strong>Liberty Bay</strong></li>
-                <li><strong>Blake Island Marine State Park</strong></li>
-                <li><strong>Olalla Bay</strong></li>
-            </ul>
-            </p>
+                include...</p>
+
+            <div class="split-content-container">
+
+                <img class="floating_images" src="imgs/tacoma-narrows.jpg" alt="Kitsap Water Access">
+
+                <div class="water-text-column">
+
+                    <div class="text-section-block">
+                        <h2 class="water_title">Freshwater</h2>
+                        <ul>
+                            <li><strong>Horseshoe Lake</strong></li>
+                            <li><strong>Wildcat Lake County Park</strong></li>
+                            <li><strong>Long Lake County Park</strong></li>
+                            <li><strong>Island Lake County Park</strong></li>
+                            <li><strong>Wick's Lake Park</strong></li>
+                        </ul>
+
+
+                        <h2 class="water_title">Saltwater</h2>
+                        <ul>
+                            <li><strong>Point No Point</strong></li>
+                            <li><strong>Puget Sound</strong></li>
+                            <li><strong>Manchester State Park</strong></li>
+                            <li><strong>Liberty Bay</strong></li>
+                            <li><strong>Blake Island Marine State Park</strong></li>
+                            <li><strong>Olalla Bay</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
+
         <section>
 
             <!-- Mason County Water Accesses with their locations -->
 
-            <h1 class="clearing_images" id="mason-county">Mason County Water Accesses</h1>
+            <h1 class="clearing_images title_header" id="mason-county">Mason County Water Accesses</h1>
             <p>Mason County also has many wonderful water accesses for swimming and paddle boarding. Some notable spots
-                are...
-            <ul>
-                <img id="mason-water-access" src="imgs/mason-lake.jpeg" alt="Mason Water Access" width="700"
-                    height="500">
-                <h2 class="water_title">Freshwater</h2>
-                <li><strong>Lake Leland</strong></li>
-                <li><strong>Lake Sylvia State Park</strong></li>
-                <li><strong>Lake Cushman</strong></li>
-                <li><strong>Mason Lake Park</strong></li>
-                <h2 class="water_title">Saltwater</h2>
-                <li><strong>Hood Canal</strong></li>
-                <li><strong>Skokomish River</strong></li>
-                <li><strong>Puget Sound</strong></li>
-                <li><strong>Potlatch State Park</strong></li>
-            </ul>
-            </p>
+                are...</p>
+
+            <div class="split-content-container">
+                <img class="floating_images" src="imgs/mason-lake.jpeg" alt="Mason Water Access">
+
+                <div class="water-text-column">
+                    <div class="text-section-block">
+                        <h2 class="water_title">Freshwater</h2>
+                        <ul>
+                            <li><strong>Lake Leland</strong></li>
+                            <li><strong>Lake Sylvia State Park</strong></li>
+                            <li><strong>Lake Cushman</strong></li>
+                            <li><strong>Mason Lake Park</strong></li>
+                        </ul>
+
+                        <h2 class="water_title">Saltwater</h2>
+                        <ul>
+                            <li><strong>Hood Canal</strong></li>
+                            <li><strong>Skokomish River</strong></li>
+                            <li><strong>Puget Sound</strong></li>
+                            <li><strong>Potlatch State Park</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--Back to Top-->
@@ -167,5 +200,4 @@
             <p class="clearing_images">Copyright &copy; 2026 Casey Poare</p>
         </footer>
     </main>
-
 </body>
