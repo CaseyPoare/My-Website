@@ -246,6 +246,7 @@ nav a:hover {
     text-align: center;
 }
 
+/* Water Text/Title Styles */
 .water_title {
     font-size: 30px;
     margin-bottom: 10px;
@@ -280,6 +281,7 @@ nav a:hover {
     margin-bottom: 0;
 }
 
+/* Flexbox Layouts */
 .text-section-block {
     flex: 1;
     display: flex;
@@ -310,6 +312,7 @@ nav a:hover {
     width: 100%;
 }
 
+/*Image Styles*/
 .floating_images {
     min-width: 35%;
     flex: 1;
@@ -319,6 +322,7 @@ nav a:hover {
     border-radius: 4px;
 }
 
+/* Clearing Floats and Vertical Spacing */
 .clearing_images {
     clear: both;
     text-align: center;
@@ -340,6 +344,7 @@ nav a:hover {
     border-radius: 20px;
 }
 
+/* Navigation Menu Styles */
 .nav-container {
     display: flex;
     flex-direction: row;
@@ -397,6 +402,7 @@ nav a:hover {
     }
 }
 
+/* Media Queries for Vertical Transition */
 @media (max-width: 1050px) {
     .split-content-container {
         flex-direction: column;
@@ -426,6 +432,7 @@ nav a:hover {
     }
 }
 
+/* Media Queries for Font Sizes */
 @media screen and (max-width: 964px) {
     p {
         font-size: 14px;
@@ -554,6 +561,7 @@ nav a:hover {
     }
 }
 
+/* Media Queries for Safety Gear Page and Regulations Page */
 @media screen and (max-width: 800px) {
     .safety-gear-page .card_container {
         flex-direction: column;
